@@ -9,7 +9,7 @@ You can optionally customize the environment, add obstacles and jumping (optiona
 - Read the [Godot RL Agents readme](https://github.com/edbeeching/godot_rl_agents?tab=readme-ov-file#godot-rl-agents) (we'll use a different command to install a specific version however),
 - [Introduction to Godot RL Agents](https://huggingface.co/learn/deep-rl-course/unitbonus3/godotrl) (optional but recommended),
 - Basic Godot/Gdscript knowledge (recommended but not required to get started with the tutorial),
-- In your virtual Python env (conda/venv/etc.), use `pip install https://github.com/edbeeching/godot_rl_agents/archive/f4b53921f0f6602d930b7b174a3ba7b8aed361aa.zip` to install the version of Godot RL Agents used when writing this tutorial,
+- In your virtual Python env (conda/venv/etc.), use `pip install https://github.com/edbeeching/godot_rl_agents/archive/f4b53921f0f6602d930b7b174a3ba7b8aed361aa.zip` to install the version of Godot RL Agents used while writing this tutorial,
 - Godot 4.3 (64 bit, mono version) - you can get it from [https://godotengine.org/download/windows/](https://godotengine.org/) (other 4.x versions might also work, especially newer ones, but the tutorial was made with 4.3).
 
 ## Getting started:
@@ -69,7 +69,7 @@ Inside of the AIController3D node, we need to add:
 
 Set the following:
 
-- Max distance: 5 (this is used when adjusting the observations to be in 0-1 range, if the actual distance is larger than 5 it will be clamped to 1, you can adjust this based on the size of the map but a very large value might perform worse so I recommend trying a small value, then increase as needed - if the max distance is very large, after division, the RL agent might sometimes receive very small values that are more difficult to learn from).
+- Max distance: 5 (this is  adjusting the observations to be in 0-1 range, if the actual distance is larger than 5 it will be clamped to 1, you can adjust this based on the size of the map but a very large value might perform worse so I recommend trying a small value, then increase as needed - if the max distance is very large, after division, the RL agent might sometimes receive very small values that are more difficult to learn from).
 
 ![Position Sensor 3D](https://github.com/user-attachments/assets/f833a88d-9265-46f5-8b18-1f275be64d02)
 
