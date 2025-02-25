@@ -73,7 +73,7 @@ Set the following:
 
 ![Position Sensor 3D](https://github.com/user-attachments/assets/f833a88d-9265-46f5-8b18-1f275be64d02)
 
-- Use separate direction: ON (this makes it so the RL model will receive a normalized direction vector + distance separately, this helps in some cases, e.g. when the distance is low the direction values will still be large enough for the RL model to use easily, vs when the setting is OFF, the model only receives relative position coordinates, so if the distance is low the values can be very small - but you can try both settings, sometimes OFF works just fine and makes the observation space slightly smaller).
+- Use separate direction: ON (this makes it so the RL model will receive a normalized direction vector + distance separately, this helps in some cases, e.g. when the distance is small the direction values will still be large enough for the RL model to use easily, vs when the setting is OFF, the model only receives relative position coordinates, so if the distance is small the values can be very small - but you can try both settings, sometimes OFF works just fine and makes the observation space slightly smaller).
 
 ### Adjust the RayCastSensor3D node:
 
