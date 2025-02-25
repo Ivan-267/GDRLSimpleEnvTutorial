@@ -99,6 +99,7 @@ We’ll need to to finish adjusting the sensor/reward nodes from there (by conne
 ### Adjust PositionSensor and ApproachNodeReward
 
 For PositionSensor, we’ll add the “Chest” node to objects to observe, and for ApproachNodeReward we’ll set the target node to “Chest”.
+We also set the reward scale to 0.1. 
 
 ![AdjustPositionSensorRewardNodes](https://github.com/user-attachments/assets/e8cd19df-1380-40d8-a533-88140be70d86)
 
