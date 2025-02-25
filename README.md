@@ -63,7 +63,7 @@ Inside of the AIController3D node, we need to add:
 
 - PositionSensor3D (we'll use this to give the RL agent the relative position from the robot to the treasure chest),
 - RaycastSensor3D (used to give distances to nearby walls as observation),
-- ApproachNodeReward3D (used to calculate a reward when the robot approaches a node, in this env, that will be the treasure chest node).
+- ApproachNodeReward3D (used to calculate a reward for the robot approaching a node, in this env, that will be the treasure chest node).
 
 ### Adjust the PositionSensor3D node:
 
