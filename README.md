@@ -32,7 +32,7 @@ After opening the game scene, this is where you should design a basic environmen
 
 ![modules folder](https://github.com/user-attachments/assets/8a59e6dc-c803-48b5-8641-28a17dbfa2dd)
 
-We’ll use the “wall”, “stone_floor” and “chest” scenes from the modules folder, and also the “player” scene which we can search for by typing `player` in the filter box above.
+We’ll use the “wall”, “stone_floor” and “chest” scenes from the modules folder, and also the “robot” scene which we can search for by typing `robot` in the filter box above.
 
 In case you see the viewport mode as “orthogonal”, you can switch it to perspective by clicking on it and choosing `perspective` (or use orthogonal per your preference).
 
