@@ -130,7 +130,7 @@ const GRAVITY = 20.0
 # We use this when reseting the robot to its initial transform
 @onready var initial_transform := transform
 
-# Requested movement is set by AIController
+# Requested movement (and jump, if enabled) is set by AIController
 # based on the action produced by the model
 var requested_movement: Vector2
 var requested_jump: bool
