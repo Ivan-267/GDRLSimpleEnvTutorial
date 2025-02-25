@@ -69,7 +69,7 @@ Inside of the AIController3D node, we need to add:
 
 Set the following:
 
-- Max distance: 5 (this is  adjusting the observations to be in 0-1 range, if the actual distance is larger than 5 it will be clamped to 1, you can adjust this based on the size of the map but a very large value might perform worse so I recommend trying a small value, then increase as needed - if the max distance is very large, after division, the RL agent might sometimes receive very small values that are more difficult to learn from).
+- Max distance: 5 (this is used to adjust the observations to be in 0-1 range, if the actual distance is larger than 5 it will be clamped to 1, you can adjust this based on the size of the map but a very large value might perform worse so I recommend trying a small value, then increase as needed - if the max distance is very large, after division, the RL agent might sometimes receive very small values that are more difficult to learn from).
 
 ![Position Sensor 3D](https://github.com/user-attachments/assets/f833a88d-9265-46f5-8b18-1f275be64d02)
 
