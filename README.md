@@ -349,6 +349,8 @@ This will add another action to the RL agent. Note that adding or removing actio
 
 Training this model may take a little longer, but note that training too long might cause a performance degradation (this can be alleviated by changing the hyperparameters in the training script). It took around 144 seconds on an i5 desktop CPU. Remember to copy the newly exported onnx model before running the testing scene.
 
+Also note that the Raycast sensor does not look down so it might not be possible to learn some layouts effectively. Check the next example on how to adjust that. 
+
 Here’s the result:
 
 https://github.com/user-attachments/assets/988341e1-0d3b-4c97-b272-c35d6c081ddd
