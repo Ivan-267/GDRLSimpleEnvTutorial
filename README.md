@@ -185,7 +185,7 @@ func game_over(reward: float = 0):
 	ai_controller.reset()
 	transform = initial_transform
 
-## Restarts the episode with a positive reward if the chest is collected
+## Restarts the game with a positive reward if the chest is reached
 func _on_chest_body_entered(body: Node3D) -> void:
 	game_over(1)
 
