@@ -109,7 +109,7 @@ Now, we need to add the scripts for the Robot and AIController:
 - Right click on `Robot`, click on “AttachScript”, then on “Create”.
 - Replace the script content with the following (check the comments to better understand what each section of the code does):
 
-```gscript
+```gdscript
 extends CharacterBody3D
 class_name Robot
 
