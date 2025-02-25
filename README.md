@@ -286,7 +286,7 @@ func set_action(action) -> void:
 	#player.requested_jump = bool(action.jump[0] > 0)
 ```
 
-On the first few lines, there are references to a few nodes, if there are some errors related to it, check that the nodes exist at that position, with that name (in the completed project, the reward node is named differently, and the script there is also adjusted for that).
+On the first few lines, there are references to a few nodes, if there are some errors related to it, check that the nodes exist at that path, with that name (in the completed project, the reward node is named differently, and the script there is also adjusted for that).
 
 ### Return to the GameScene
 
