@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://okm436545ts"]
+
+[ext_resource type="PackedScene" uid="uid://c6xflc321tq4p" path="res://assets/chest_open.glb" id="1_oi552"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dr0c8"]
+size = Vector3(0.575, 0.568, 0.504)
+
+[node name="Chest" type="Area3D"]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28, 0)
+shape = SubResource("BoxShape3D_dr0c8")
+
+[node name="chest_open" parent="." instance=ExtResource("1_oi552")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)

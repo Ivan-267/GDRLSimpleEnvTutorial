@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmyuvijotgy6c"]
+
+[ext_resource type="PackedScene" uid="uid://dogdqgqh53qlb" path="res://modules/stone_floor.tscn" id="1_wp7be"]
+[ext_resource type="PackedScene" uid="uid://okm436545ts" path="res://modules/chest.tscn" id="3_6v147"]
+[ext_resource type="PackedScene" uid="uid://hc2s5r2aebiv" path="res://modules/wall.tscn" id="4_4c7ad"]
+[ext_resource type="PackedScene" uid="uid://ctvcte24jvlna" path="res://scenes/robot.tscn" id="5_071n8"]
+
+[node name="GameScene" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="StoneFloor" parent="Map" instance=ExtResource("1_wp7be")]
+
+[node name="StoneFloor2" parent="Map" instance=ExtResource("1_wp7be")]
+
+[node name="StoneFloor3" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="StoneFloor4" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="StoneFloor5" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="StoneFloor6" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="StoneFloor7" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="StoneFloor8" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="StoneFloor9" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="StoneFloor10" parent="Map" instance=ExtResource("1_wp7be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="Wall" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="Wall2" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 3)
+
+[node name="Wall3" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+
+[node name="Wall4" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Wall5" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+
+[node name="Wall6" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+
+[node name="Wall7" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.9, 0, 2.1)
+
+[node name="Wall8" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.9, 0, 0.0999999)
+
+[node name="Wall9" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.9, 0, -1.9)
+
+[node name="Wall10" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.9, 0, -1.9)
+
+[node name="Wall11" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.9, 0, 0.0999999)
+
+[node name="Wall12" parent="Map" instance=ExtResource("4_4c7ad")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.9, 0, 2.1)
+
+[node name="Chest" parent="." instance=ExtResource("3_6v147")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.004, -2.495)
+
+[node name="Robot" parent="." instance=ExtResource("5_071n8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.514, 0.150271, 1.692)
+
+[node name="AIController3D" parent="Robot" index="2"]
+reset_after = 2000
+
+[node name="PositionSensor3D" parent="Robot/AIController3D" index="1" node_paths=PackedStringArray("objects_to_observe")]
+objects_to_observe = [NodePath("../../../Chest")]
+max_distance = 8.0
+
+[node name="ApproachGoalReward" parent="Robot/AIController3D" index="2" node_paths=PackedStringArray("target_node")]
+target_node = NodePath("../../../Chest")
+reward_scale = 0.1
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.366501, 0.930418, 0, -0.930418, 0.366501, 0, 4.477, 2.19)
+
+[connection signal="body_entered" from="Chest" to="Robot" method="_on_chest_body_entered"]
+
+[editable path="Robot"]
