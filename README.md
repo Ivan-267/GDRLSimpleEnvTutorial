@@ -6,15 +6,17 @@ You can optionally customize the environment, add obstacles and jumping (optiona
 
 ### Prerequisites:
 
-- Read the [Godot RL Agents readme](https://github.com/edbeeching/godot_rl_agents?tab=readme-ov-file#godot-rl-agents) (we'll use a different command to install a specific version however),
+- Read the [Godot RL Agents readme](https://github.com/edbeeching/godot_rl_agents?tab=readme-ov-file#godot-rl-agents) and install Godot RL Agents following the instructions,
 - [Introduction to Godot RL Agents](https://huggingface.co/learn/deep-rl-course/unitbonus3/godotrl) (optional but recommended),
 - Basic Godot/Gdscript knowledge (recommended but not required to get started with the tutorial),
-- In your virtual Python env (conda/venv/etc.), use `pip install https://github.com/edbeeching/godot_rl_agents/archive/f4b53921f0f6602d930b7b174a3ba7b8aed361aa.zip` to install the version of Godot RL Agents used while writing this tutorial,
 - Godot 4.3 (64 bit, mono version) - you can get it from [https://godotengine.org/download/windows/](https://godotengine.org/) (other 4.x versions might also work, especially newer ones, but the tutorial was made with 4.3).
+
+Note: If there are any compatibility issues caused by future updates, you could also try installing the specific Godot RL Agents version used when writing/testing this tutorial:
+`pip install https://github.com/edbeeching/godot_rl_agents/archive/f4b53921f0f6602d930b7b174a3ba7b8aed361aa.zip`
 
 ## Getting started:
 
-### Download the project from [link] and open the starter project in Godot Editor.
+### Download the project by cloning it or from github (you can download as zip) and open the starter project in Godot Editor.
 
 You might see some errors on initial load such as “Unable to load addon script…”, as Godot will need to rebuild some temporary files, this should only happen the first time you import the Godot project.
 
