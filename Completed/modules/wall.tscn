@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://hc2s5r2aebiv"]
+
+[ext_resource type="PackedScene" uid="uid://c53cdnyfl58k4" path="res://assets/wall.glb" id="1_d4mn4"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="wall" parent="." instance=ExtResource("1_d4mn4")]

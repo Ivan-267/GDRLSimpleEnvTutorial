@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bhid2iugmgodc"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tw0tk"]
+frequency = 0.0055
+fractal_octaves = 1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hfnlk"]
+seamless = true
+seamless_blend_skirt = 1.0
+as_normal_map = true
+bump_strength = 3.0
+normalize = false
+noise = SubResource("FastNoiseLite_tw0tk")
+
+[resource]
+resource_name = "Water"
+transparency = 1
+albedo_color = Color(0.4899, 0.58328, 0.69, 0.176471)
+metallic_specular = 1.0
+roughness = 0.0
+normal_enabled = true
+normal_scale = 4.85
+normal_texture = SubResource("NoiseTexture2D_hfnlk")

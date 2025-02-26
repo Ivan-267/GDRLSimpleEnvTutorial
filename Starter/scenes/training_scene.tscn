@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlmop4eppg8wr"]
+
+[ext_resource type="PackedScene" uid="uid://cmyuvijotgy6c" path="res://scenes/game_scene.tscn" id="1_iv0ne"]
+[ext_resource type="Script" path="res://addons/godot_rl_agents/sync.gd" id="2_w7611"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ht4v2"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_itu6c"]
+sky_material = SubResource("ProceduralSkyMaterial_ht4v2")
+
+[sub_resource type="Environment" id="Environment_t1pis"]
+background_mode = 2
+sky = SubResource("Sky_itu6c")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="TrainingScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_t1pis")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="GameScene" parent="." instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport2" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport2" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport3" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport3" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport4" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport4" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport5" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport5" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport6" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport6" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport7" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport7" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport8" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport8" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport9" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport9" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport10" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport10" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport11" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport11" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport12" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport12" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport13" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport13" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport14" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport14" instance=ExtResource("1_iv0ne")]
+
+[node name="SubViewport15" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+
+[node name="GameScene" parent="SubViewport15" instance=ExtResource("1_iv0ne")]
+
+[node name="Sync" type="Node" parent="."]
+script = ExtResource("2_w7611")
+speed_up = 36.0
