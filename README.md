@@ -307,7 +307,7 @@ Great, we've set the environment and are now ready to start training our robot t
 stable_baselines3_example.py --onnx_export_path=model.onnx --timesteps=10_000_000
 ```
 
-- This will start the Python training server, you will see a message to press play in Godot editor, which is what we should do next.
+- This will start the Python training server, you will see a message to **press play in Godot editor**, which is what we should do next.
 - Training should start and you should see `ep_reward_mean` start increasing in the console. Let it train for a little while, observe the behavior in Godot and when it seems to have learned well, you can stop Python training manually (`CTRL + C`)
 - You should now have an onnx file called `model.onnx` in the same folder where you launched training from (likely in the same folder as the Python script), find it and copy or move it to your Godot project folder (likely the `Starter` folder)
 
