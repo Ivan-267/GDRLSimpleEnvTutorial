@@ -4,6 +4,9 @@
 Welcome! In this tutorial, you'll learn how to train an agent to reach the treasure chest using GDRL’s sensor and reward nodes. 
 You can optionally customize the environment, add obstacles and jumping (optional variants are not included in the "completed" project folder).
 
+### Quick video walkthrough:
+https://github.com/user-attachments/assets/b53fa380-350b-4292-8bd1-de489ed1a02c
+
 ### Prerequisites:
 
 - Read the [Godot RL Agents readme](https://github.com/edbeeching/godot_rl_agents?tab=readme-ov-file#godot-rl-agents) and install Godot RL Agents following the instructions,
